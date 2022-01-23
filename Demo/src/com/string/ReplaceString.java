@@ -26,10 +26,14 @@ public class ReplaceString {
 				//System.out.println("old"+oldString);
 			}
 		}
+		String s3="";
 		System.out.println("New String: ");
 		for(int i=0;i<strArray.length;i++) {
+			s3=s3+" "+strArray[i];
 			System.out.print(strArray[i]+" ");
 		}
+		System.out.println();
+		System.out.println("S3: "+s3);
 	sc.close();
 	}
 
