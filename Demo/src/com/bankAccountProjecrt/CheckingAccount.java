@@ -8,7 +8,7 @@ public class CheckingAccount extends BankAccount{
 		transactionCount=0;
 	}
 
-	private int transactionCount;
+	private static int transactionCount;
 	private static final int numFree=3;
 	private static final double transFee=2.0;
 	
@@ -20,6 +20,7 @@ public class CheckingAccount extends BankAccount{
 			String str=super.withdraw(fees);
 			if(str.equals("withdraw successfully...!")) {
 				transactionCount=0;
+				System.out.println("deduct fees call");
 			}
 		}
 		//return "";
