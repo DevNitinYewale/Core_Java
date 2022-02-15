@@ -26,9 +26,10 @@ public class AddNewElementInExistingArray {
 		System.out.print("Enter a number we want to insert: ");
 		int number=sc.nextInt();
 			
-		for(int i=(n-1);i>position-1;i--) {
+		for(int i=(n-1);i>=position-1;i--) {
 			arr[i+1]=arr[i];
 		}
+		
 		arr[position-1]=number;
 		
 		for(int i=0;i<arr.length;i++) {

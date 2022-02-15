@@ -24,7 +24,7 @@ public class NestedNonStaticClass {
 		InnerDemo obj2=obj.new InnerDemo();//create instance of inner class which is used for accessing the only inner class methods and variables
 		obj.display();
 		obj.outerDisplay();
-		obj2.innerClassDisplay();//access inner class method 
+		obj2.innerClassDisplay();//access only inner class method 
 	}
 
 }

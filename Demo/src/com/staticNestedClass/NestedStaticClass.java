@@ -2,14 +2,15 @@ package com.staticNestedClass;
 
 public class NestedStaticClass {
 	void outerDisplay() {
-		System.out.println("I am outer Display metho.......!");
+		System.out.println("I am outer Display method.......!");
 	}
 	
 	static class InnerStatic{
 			void innerDisplay() {
 				System.out.println("I am innerDisplay from Inner Static Class: ");
-				NestedNonStaticClass obj=new NestedNonStaticClass();
+				NestedStaticClass obj=new NestedStaticClass();
 				obj.outerDisplay();
+				
 			}
 	}
 	
@@ -23,6 +24,8 @@ public class NestedStaticClass {
 		// TODO Auto-generated method stub
 		NestedStaticClass.InnerStatic obj3=new NestedStaticClass.InnerStatic();
 		obj3.innerDisplay();
+	/*	NestedStaticClass ns=new NestedStaticClass();
+		ns.outerDisplay2();*/
 	
 
 	}

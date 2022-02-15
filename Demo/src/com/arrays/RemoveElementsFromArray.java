@@ -29,7 +29,7 @@ public class RemoveElementsFromArray {
 		for(int i=rm-1;i<arr.length-1;i++) {
 			arr[i]=arr[i+1];
 		}
-		System.out.println("After removing elements array will be: ");
+		System.out.println("After removing  array elements will be: ");
 		for(int i=0;i<arr.length-1;i++) {
 			System.out.print(arr[i]+" ");
 		}

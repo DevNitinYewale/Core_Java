@@ -8,7 +8,7 @@ public class NumberOccurences {
 		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
 		System.out.print("Enter a string: ");
-		String str=sc.next();
+		String str=sc.nextLine();
 		
 		char[] ch=str.toCharArray();
 	
